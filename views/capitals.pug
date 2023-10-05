@@ -1,0 +1,11 @@
+html
+    head
+        title= title
+        style
+            include ./style.css
+    body 
+        main
+            div(class="card")
+                h1= `${title}`
+                p= `A ${title}, on est le ${date} et il est ${time}.`
+                a(href='/')= "Retour à l'accueil"
